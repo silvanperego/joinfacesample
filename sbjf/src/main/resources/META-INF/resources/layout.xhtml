@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	<h:head>
+		<h:outputStylesheet name="global.css" />
+	</h:head>
+	<h:body>
+		<div class="header">Neuigkeiten on-line</div>
+		<h:form>
+			<p:menubar>
+				<p:menuitem value="Liste" url="index.xhtml"/>
+				<p:menuitem value="Hinzufügen" action="#{newsEntryController.add}"/>
+			</p:menubar>
+			<div class="contentArea"><ui:insert name="content" /></div>
+		</h:form>
+	</h:body>
+</html>
